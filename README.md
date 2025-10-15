@@ -1,5 +1,5 @@
 # Ex.06 Book Front Cover Page Design
-## Date:
+## Date:15/10/2025
 
 ## AIM:
 To design a book front cover page using HTML and CSS.
@@ -31,9 +31,90 @@ Insert the images in their appropriate places.
 Publish the website in the LocalHost.
 
 ## PROGRAM:
+'''
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Cover</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Georgia', serif;
+    }
 
+    .book-cover {
+      width: 400px;
+      height: 600px;
+      background: palevioletred;
+      border: 2px solid #333;
+      padding: 40px 30px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .title {
+      font-size: 28px;
+      font-weight: bold;
+      color: #2e2e2e;
+      text-align: center;
+      line-height: 1.3;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      margin-top: 10px;
+      text-align: center;
+      font-style: italic;
+    }
+
+    .image {
+      flex: 1;
+      background: url('perarasu/bookapp/static/bookim.png') center/contain no-repeat;
+      margin: 30px 0;
+    }
+
+    .author {
+      font-size: 18px;
+      text-align: center;
+      color: #444;
+      margin-top: 20px;
+    }
+
+    .line {
+      height: 2px;
+      background: #333;
+      width: 50px;
+      margin: 10px auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="book-cover">
+    <div>
+      <div class="title">Create your own business</div>
+      <div class="line"></div>
+      <div class="subtitle">IF YOU BELIEVE I YOUR SELF YU CAN DO IT</div>
+    </div>
+    <div class="image">
+        <img src="bookim.png" length="3%" width="70%">
+    </div>
+    <div class="author">By Morgan Simplar</div>
+  </div>
+</body>
+</html>
+'''
 
 ## OUTPUT:
+<img width="572" height="843" alt="Screenshot 2025-10-15 113107" src="https://github.com/user-attachments/assets/d463f148-6cae-4b6d-8eea-8c822e30ffab" />
 
 
 ## RESULT:
